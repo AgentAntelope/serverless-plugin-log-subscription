@@ -52,7 +52,7 @@ module.exports = class LogSubscriptionsPlugin {
           template.Resources[logicalId] = resource;
 =======
           if(config.roleArn !== undefined) {
-            template.Resources[key][Properties][RoleArn] = config.roleArn;
+            template.Resources[key].Properties.RoleArn = config.roleArn;
           }
 >>>>>>> add support for adding a RoleArn for logs putting to Kinesis streams
         }
